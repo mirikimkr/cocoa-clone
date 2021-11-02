@@ -8,10 +8,12 @@
     <title>Welcome to CocoaTalk</title>
   </head>
   <body>
+
+    <!-- ↓Status bar -->
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
-        <i class="fas fa-wifi"></i>
+        <i class="fas fa-wifi fa-xs"></i>
       </div>
       <div class="status-bar__column">
         <span>11:11</span>
@@ -19,9 +21,10 @@
       <div class="status-bar__column">
         <span>98%</span>
         <i class="fas fa-battery-full fa-lg"></i>
-        <i class="fas fa-bolt"></i>
+        <i class="fas fa-bolt fa-xs"></i>
       </div>
     </div>
+    <!-- ↑Status bar -->
 
     <header class="welcome-header">
       <h1 class="welcome-header__title">Welcome to CocoaTalk</h1>
@@ -30,17 +33,19 @@
       </p>
     </header>
 
-    <form id="login-form">
-      <input type="text" placeholder="Email or Phone number" />
-      <input type="password" placeholder="Password" />
+    <form action="friends.html" method="get" id="login-form">
+      <input name="username" required="required" type="text" placeholder="Email or Phone number" />
+      <input name="password" required="required" type="password" placeholder="Password" />
       <input type="submit" value="Log In" />
       <input type="submit" value="Sign Up" />
       <a href="#">Find Cocoa Account or Password</a>
     <form/>
 
+    <!-- ↓fontawesome -->
     <script
       src="https://kit.fontawesome.com/6478f529f2.js"
       crossorigin="anonymous"
     ></script>
+    <!-- ↑fontawesome -->
   </body>
 </html>
